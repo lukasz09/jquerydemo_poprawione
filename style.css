@@ -1,0 +1,56 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background:#D1FFFD;
+	width: 99%;
+	height: 99%;
+}
+#strona{
+	width:100%;
+	height: 100%;
+}
+#films_form{
+
+	width: 60%;
+	margin-left: 40%;
+	
+}
+#strona .napis{
+	font-size:20px;
+	text-align : center;
+}
+form input{
+	width:30%;
+
+}
+
+#send_infos{
+	width: 15%;
+}
+
+#reset_infos{
+	width: 15%;
+}
+
+form input.przycisk:hover{
+	color:#fff;
+	background:#D28EE2;
+}
+.error{
+	display: none;
+	margin-left: 10px;
+}
+ 
+input.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+    border: 2px solid green;
+}
+
+#alarm{
+	display: none;
+}

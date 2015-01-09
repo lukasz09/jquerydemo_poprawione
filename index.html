@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.inputfocus.js"></script>
+<script type="text/javascript" src="./js/myScript.js"></script>
+</head>
+<body>
+<div id="strona">
+		<p class="napis">Temat projektu z BIU-ćwiczenia: Filmy</p>
+	
+    <form onsubmit="return validate()" id="films_form">
+        <div>
+            <input type="text" id="nazwa" name="name"></input>
+            <span class="error" id="name_error_require">To pole jest wymagane</span>
+            <span class="error" id="name_error_length"> Osiągnięto maksymalną liczbę znaków </span>
+        </div>
+        <div>
+            <input type="text" id="gatunek" name="genre"></input>
+             <span class="error" id="genre_error_require">To pole jest wymagane</span>
+            <span class="error" id="genre_error_length">Osiągnięto maksymalną liczbę znaków</span>
+        </div>
+        <div>
+            <input type="text" id="data" name="date"></input>
+            <span class="error" id="date_error_require">To pole jest wymagane</span>
+            <span class="error" id="date_error" style="display: none">To nie jest prawidłowa data.</span>
+        </div>
+		<div id="przyciski">
+            <input type="submit" value="Wyślij" class="przycisk" id="send_infos"/>
+            <input type="reset" value="Wyczyść" class="przycisk" id="reset_infos"/>
+        </div>
+	</form>
+
+    <p id="alarm"> Wypełnij wszystkie pola </p>
+	
+</div>
+</body>
+</html>
